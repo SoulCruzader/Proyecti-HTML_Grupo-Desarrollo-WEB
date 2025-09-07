@@ -1,12 +1,13 @@
 /* Variables */
 :root {
-    --color1: #fcb900;
+    --color1: #d9a404;
     /* dorado */
     --color2: #ffffff;
     /* blanco */
     --color3: #191919;
-    /* gris oscuro / negro */
+    /* negro */
     --color4: #f4f4f4;
+    /* gris claro */
     --fuente: Arial, Helvetica, sans-serif;
 }
 
@@ -19,15 +20,47 @@
 body {
     font-family: var(--fuente);
     line-height: 1.8;
-    background: var(--color2);
 }
 
-/* Barra negra superior */
+/* Utilidades (row y columnas) */
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.col {
+    padding: 10px;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.col-40 {
+    width: 40%;
+}
+
+.col-60 {
+    width: 60%;
+}
+
+.col-100 {
+    width: 100%;
+}
+
+/* Barra superior */
 .top-bar {
     background-color: var(--color3);
     color: var(--color2);
     padding: 5px 0;
     font-size: 14px;
+}
+
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Barra amarilla principal */
@@ -37,25 +70,11 @@ body {
     padding: 15px 0;
 }
 
-/* Contenedor para centrar contenido */
-.container {
-    width: 900px;
-    /* ancho fijo */
-    margin-left: auto;
-    /* centra horizontalmente */
-    margin-right: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Menú de navegación */
+/* Menú navegación */
 .nav-menu {
     display: flex;
-    gap: 15px;
 }
 
-/* Estilos de los enlaces del menu */
 .nav-menu-link {
     color: var(--color2);
     text-decoration: none;
@@ -63,12 +82,11 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-/* Efecto al pasar el mouse sobre el enlace */
 .nav-menu-link:hover {
-    background-color: transparent;
     color: var(--color3);
 }
 
+/* Imagen */
 .img-fluid {
     width: 100%;
     height: auto;
@@ -78,76 +96,36 @@ body {
 /* Sección sobre nosotros */
 .about {
     background-color: var(--color2);
-    /* fondo blanco */
     padding: 40px 0;
 }
 
-/* Contenedor que divide en dos columnas */
-.about-container {
-    width: 900px;
-    margin: 0 auto;
-    display: flex;
-    gap: 20px
-}
-
-/* Columna izquierda: texto */
-.about-text {
-    width: 50%;  
-}
-
-/* Titulos */
 .title-black {
     color: var(--color3);
-    /* negro */
     font-size: 32px;
     margin-bottom: 5px;
 }
 
 .title-gold {
     color: var(--color1);
-    /* dorado */
     font-size: 32px;
     margin-bottom: 20px;
 }
 
-/* Párrafo dentro del bloque de texto */
-.about-text p {
+.about p {
     color: var(--color3);
     font-size: 16px;
     line-height: 1.6;
 }
 
-/* Columna derecha: imagen */
-.about-image {
-     width: 50%;
-}
-
-.about-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    border-radius: 4px;
-}
-
-/* Horarios */
+/* Sección horarios */
 .schedule-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
     padding: 40px;
     background-color: var(--color4);
-}
-
-/* Columna izquierda */
-.schedule-text {
-    width: 50%;
 }
 
 .schedule-text h3 {
     font-size: 16px;
     font-weight: normal;
-    margin: 0;
 }
 
 .schedule-text h1 {
@@ -165,7 +143,7 @@ body {
     line-height: 1.5;
 }
 
-/* Boton locales */
+/* Botón */
 .btn {
     display: inline-block;
     background-color: var(--color1);
@@ -181,20 +159,18 @@ body {
     border: 2px solid var(--color1);
 }
 
-.schedule-boxes {
-    display: flex;
-    gap: 20px;
-}
-
-/* Caja horarios */
+/* Cajas de horarios */
 .schedule-box {
     background-color: var(--color2);
-    border: 1px solid var(--color2);
     padding: 20px;
     width: 200px;
+    margin-right: 20px;
 }
 
-/* Encabezado dentro de la caja */
+.schedule-box:last-child {
+    margin-right: 0;
+}
+
 .schedule-box h4 {
     background-color: var(--color1);
     color: var(--color2);
@@ -203,23 +179,19 @@ body {
     font-size: 14px;
 }
 
-/* Fila horarios(dia+hora) */
-.row {
+.schedule-row {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid var(--color2);
     padding: 5px 0;
 }
 
-.row:last-child {
+.schedule-row:last-child {
     border-bottom: none;
-    /* quita la línea del último */
 }
 
-/* texto de cada fila */
-.row p {
+.schedule-row p {
     margin: 0;
     font-size: 14px;
     color: var(--color3);
 }
-
