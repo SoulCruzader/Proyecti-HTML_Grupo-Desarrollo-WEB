@@ -19,6 +19,7 @@
 body {
     font-family: var(--fuente);
     line-height: 1.8;
+    background: var(--color2);
 }
 
 /* Barra negra superior */
@@ -38,8 +39,10 @@ body {
 
 /* Contenedor para centrar contenido */
 .container {
-    max-width: 70%;
+    width: 900px;
+    /* ancho fijo */
     margin-left: auto;
+    /* centra horizontalmente */
     margin-right: auto;
     display: flex;
     justify-content: space-between;
@@ -81,17 +84,15 @@ body {
 
 /* Contenedor que divide en dos columnas */
 .about-container {
-    max-width: 80%;
+    width: 900px;
     margin: 0 auto;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+    gap: 20px
 }
 
 /* Columna izquierda: texto */
 .about-text {
-    flex: 1;
+    width: 50%;  
 }
 
 /* Titulos */
@@ -118,7 +119,7 @@ body {
 
 /* Columna derecha: imagen */
 .about-image {
-    flex: 1;
+     width: 50%;
 }
 
 .about-image img {
@@ -220,5 +221,5 @@ body {
     margin: 0;
     font-size: 14px;
     color: var(--color3);
-
 }
+
