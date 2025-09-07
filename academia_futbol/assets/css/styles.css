@@ -1,0 +1,223 @@
+/* Variables */
+:root {
+    --color1: #d9a404;
+    /* dorado */
+    --color2: #ffffff;
+    /* blanco */
+    --color3: #191919;
+    /* gris oscuro / negro */
+    --color4: #f4f4f4;
+    --fuente: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente);
+    line-height: 1.8;
+}
+
+/* Barra negra superior */
+.top-bar {
+    background-color: var(--color3);
+    color: var(--color2);
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+/* Barra amarilla principal */
+.main-bar {
+    background-color: var(--color1);
+    color: var(--color3);
+    padding: 15px 0;
+}
+
+/* Contenedor para centrar contenido */
+.container {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Menú de navegación */
+.nav-menu {
+    display: flex;
+    gap: 15px;
+}
+
+/* Estilos de los enlaces del menu */
+.nav-menu-link {
+    color: var(--color2);
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el mouse sobre el enlace */
+.nav-menu-link:hover {
+    background-color: transparent;
+    color: var(--color3);
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Sección sobre nosotros */
+.about {
+    background-color: var(--color2);
+    /* fondo blanco */
+    padding: 40px 0;
+}
+
+/* Contenedor que divide en dos columnas */
+.about-container {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Columna izquierda: texto */
+.about-text {
+    flex: 1;
+}
+
+/* Titulos */
+.title-black {
+    color: var(--color3);
+    /* negro */
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.title-gold {
+    color: var(--color1);
+    /* dorado */
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Párrafo dentro del bloque de texto */
+.about-text p {
+    color: var(--color3);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Columna derecha: imagen */
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+}
+
+/* Horarios */
+.schedule-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    background-color: var(--color4);
+}
+
+/* Columna izquierda */
+.schedule-text {
+    width: 50%;
+}
+
+.schedule-text h3 {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.schedule-text h1 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.schedule-text h1 span {
+    color: var(--color1);
+    font-weight: bold;
+}
+
+.schedule-text p {
+    margin: 10px 0 20px 0;
+    line-height: 1.5;
+}
+
+/* Boton locales */
+.btn {
+    display: inline-block;
+    background-color: var(--color1);
+    color: var(--color2);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: var(--color2);
+    color: var(--color1);
+    border: 2px solid var(--color1);
+}
+
+.schedule-boxes {
+    display: flex;
+    gap: 20px;
+}
+
+/* Caja horarios */
+.schedule-box {
+    background-color: var(--color2);
+    border: 1px solid var(--color2);
+    padding: 20px;
+    width: 200px;
+}
+
+/* Encabezado dentro de la caja */
+.schedule-box h4 {
+    background-color: var(--color1);
+    color: var(--color2);
+    padding: 10px;
+    margin: -20px -20px 10px -20px;
+    font-size: 14px;
+}
+
+/* Fila horarios(dia+hora) */
+.row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color2);
+    padding: 5px 0;
+}
+
+.row:last-child {
+    border-bottom: none;
+    /* quita la línea del último */
+}
+
+/* texto de cada fila */
+.row p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--color3);
+}
