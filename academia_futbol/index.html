@@ -4,105 +4,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academia Fútbol Pro</title>
+    <title>Academia</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-    <header>
-        <!-- Barra negra con telefono y direccion  -->
-        <div class="top-bar">
-            <div class="container">
-                <p>Tel: 123-456-789 | Dirección: </p>
-            </div>
-        </div>
 
-        <!-- Barra amarilla con título y menu -->
-        <div class="main-bar">
-            <div class="container">
-                <h1>Academia de Fútbol</h1>
-                <div class="nav-menu">
-                    <a class="nav-menu-link" href="#">Inicio</a>
-                    <a class="nav-menu-link" href="#">Nosotros</a>
-                    <a class="nav-menu-link" href="#">Calendario</a>
-                    <a class="nav-menu-link" href="#">Contacto</a>
-                </div>
-            </div>
+    <!-- Barra negra superior -->
+    <div class="top-bar">
+        <div class="container row">
+            <p>Direccion:Jr. Camaná 560, Cercado de Lima - Contacto: +51 999 888 777</p>
         </div>
-    </header>
-    <main>
-        <!-- Banner con imagen -->
-        <section>
-            <img class="img-fluid" src="assets/img/banner.jpg" alt="Academia de Fútbol">
-        </section>
-        <section class="about">
-            <div class="about-container">
-                <!-- Lado izquierdo: texto -->
-                <div class="about-text">
-                    <h2 class="title-black">Sobre</h2>
-                    <h2 class="title-gold">Nosotros</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ab excepturi inventore sapiente
-                        numquam ratione tempora fuga maiores alias eaque!
-                    </p>
-                </div>
-                <!-- Lado derecho: imagen -->
-                <div class="about-image">
-                    <img src="assets/img/training.jpg" alt="Jugador de fútbol" class="img-fluid">
-                </div>
-            </div>
-        </section>
-        <!-- Sección de horarios -->
-        <section class="schedule-section">
-            <!-- Lado izquierdo: texto explicativo -->
-            <div class="schedule-text">
-                <h3>Nuestra Academia</h3>
-                <h1>HORARIOS <span>DE CLASES</span></h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
-                    cursus ante dapibus diam.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
-                    vestibulum.</p>
-                <!-- Botón de acción -->
-                <a href="#" class="btn">LOCALES</a>
+    </div>
+
+    <!-- Barra amarilla principal -->
+    <div class="main-bar">
+        <div class="container row">
+            <h1>ACADEMIA</h1>
+            <nav class="nav-menu row">
+                <a href="#" class="nav-menu-link">Inicio</a>
+                <a href="#" class="nav-menu-link">Nosotros</a>
+                <a href="#" class="nav-menu-link">Horarios</a>
+                <a href="#" class="nav-menu-link">Locales</a>
+                <a href="#" class="nav-menu-link">Contacto</a>
+            </nav>
+        </div>
+    </div>
+    <!-- Imagen -->
+    <section>
+        <img class="img-fluid" src="assets/img/banner.jpg" alt="Academia de Fútbol">
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section class="about">
+        <div class="container row">
+            <!-- Columna izquierda -->
+            <div class="col col-50">
+                <h2 class="title-black">Sobre</h2>
+                <h2 class="title-gold">Nosotros</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ab excepturi inventore
+                    sapiente numquam ratione tempora fuga maiores alias eaque!
+                </p>
             </div>
 
-            <!-- Lado derecho: cuadros con horarios -->
-            <div class="schedule-boxes">
-                <!-- Primer cuadro de horarios -->
-                <div class="schedule-box">
-                    <h4>JÓVENES</h4>
-                    <div class="row">
-                        <p>Lunes</p>
-                        <p>10AM - 11AM</p>
-                    </div>
-                    <div class="row">
-                        <p>Miércoles</p>
-                        <p>10AM - 11AM</p>
-                    </div>
-                    <div class="row">
-                        <p>Viernes</p>
-                        <p>10AM - 12PM</p>
-                    </div>
+            <!-- Columna derecha -->
+            <div class="col col-50">
+                <img src="assets/img/training.jpg" alt="Jugador de fútbol" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sección Horarios -->
+    <section class="schedule-section row">
+        <!-- Texto -->
+        <div class="col col-50 schedule-text">
+            <h3>Nuestra Academia</h3>
+            <h1>HORARIOS <span>DE CLASES</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio.</p>
+            <a href="#" class="btn">LOCALES</a>
+        </div>
+
+        <!-- Cajas de horarios -->
+        <div class="col col-50 schedule-boxes row">
+            <!-- Caja Jóvenes -->
+            <div class="schedule-box">
+                <h4>JÓVENES</h4>
+                <div class="schedule-row">
+                    <p>Lunes</p>
+                    <p>10AM - 11AM</p>
                 </div>
-                <!-- Segundo cuadro de horarios -->
-                <div class="schedule-box">
-                    <h4>ADULTOS</h4>
-                    <div class="row">
-                        <p>Martes</p>
-                        <p>6PM - 7PM</p>
-                    </div>
-                    <div class="row">
-                        <p>Jueves</p>
-                        <p>6PM - 7PM</p>
-                    </div>
-                    <div class="row">
-                        <p>Sábado</p>
-                        <p>9AM - 11AM</p>
-                    </div>
+                <div class="schedule-row">
+                    <p>Miércoles</p>
+                    <p>10AM - 11AM</p>
+                </div>
+                <div class="schedule-row">
+                    <p>Viernes</p>
+                    <p>10AM - 12PM</p>
                 </div>
             </div>
-        </section>
-    </main>
+
+            <!-- Caja Adultos -->
+            <div class="schedule-box">
+                <h4>ADULTOS</h4>
+                <div class="schedule-row">
+                    <p>Martes</p>
+                    <p>6PM - 7PM</p>
+                </div>
+                <div class="schedule-row">
+                    <p>Jueves</p>
+                    <p>6PM - 7PM</p>
+                </div>
+                <div class="schedule-row">
+                    <p>Sábado</p>
+                    <p>9AM - 11AM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
