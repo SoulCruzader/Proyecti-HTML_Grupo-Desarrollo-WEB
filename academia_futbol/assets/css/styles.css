@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-    --color1: #d9a404;
+    --color1: #fcb900;
     /* dorado */
     --color2: #ffffff;
     /* blanco */
@@ -220,4 +220,5 @@ body {
     margin: 0;
     font-size: 14px;
     color: var(--color3);
+
 }
