@@ -29,23 +29,31 @@ body {
 }
 
 .col {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding-left: 15px;
+    padding-right: 15px;
     padding: 10px;
 }
 
-.col-50 {
-    width: 50%;
+.col-40 {
+    max-width: 40%;
+    flex-basis: 40%;
 }
 
-.col-40 {
-    width: 40%;
+.col-50 {
+    max-width: 50%;
+    flex-basis: 50%;
 }
 
 .col-60 {
-    width: 60%;
+    max-width: 60%;
+    flex-basis: 60%;
 }
 
 .col-100 {
-    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
 }
 
 /* Barra superior */
@@ -195,4 +203,3 @@ body {
     font-size: 14px;
     color: var(--color3);
 }
-
